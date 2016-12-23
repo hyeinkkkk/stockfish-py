@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for
-from flask.ext.sqlalchemy import SQLAlchemy
-# from flask_sqlalchemy import SQLAlchemy
+# from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.do')
