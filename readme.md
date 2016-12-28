@@ -10,6 +10,10 @@
 
 ## pip3 install
 - flask
-- flask-sqlalchemy
+- Flask-SQLAlchemy (flask-sqlalchemy)
 - flask_restful
 - psycopg2
+- xlrd
+- uwsgi
+
+
