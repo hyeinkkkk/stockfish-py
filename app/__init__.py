@@ -8,4 +8,5 @@ app.config.from_object('config')
 
 db = SQLAlchemy(app)
 
+from app import loads
 from app import apis

@@ -4,3 +4,4 @@ app/__pycache__/*
 venv/
 app/http_handler/__pycache__/*
 app/__init__.pyc
+app/models/__pycache__/*
