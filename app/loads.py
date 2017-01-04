@@ -56,9 +56,11 @@ class Excel():
         return
 
     def load_items(self, wb):
-        if Item.query.count():
-            return
+        # if Item.query.count():
+        #     return
         target_sheet = wb.sheet_by_name("item")
+        Item.query.filter().delete(synchronize_session='fetch')
+        db.session.commit()
         self.add_rows(target_sheet, Item)
         return
 
