@@ -42,15 +42,15 @@ class Excel():
         return
 
     def load_categories(self, wb):
-        if Category.query.count():
-            return
+        # if Category.query.count():
+        #     return
         target_sheet = wb.sheet_by_name("category")
         self.add_rows(target_sheet, Category)
         return
 
     def load_sub_categories(self, wb):
-        if SubCategory.query.count():
-            return
+        # if SubCategory.query.count():
+        #     return
         target_sheet = wb.sheet_by_name("subcategory")
         self.add_rows(target_sheet, SubCategory)
         return
