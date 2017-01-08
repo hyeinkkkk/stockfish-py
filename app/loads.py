@@ -45,6 +45,8 @@ class Excel():
         # if Category.query.count():
         #     return
         target_sheet = wb.sheet_by_name("category")
+        Category.query.filter().delete(synchronize_session='fetch')
+        db.session.commit()
         self.add_rows(target_sheet, Category)
         return
 
